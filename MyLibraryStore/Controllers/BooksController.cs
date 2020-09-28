@@ -57,6 +57,11 @@ namespace MyLibraryStore.Controllers
             return RedirectToAction("Index", "Books");
         }
 
+        public IActionResult NewAction()
+        {
+            return View();
+        }
+
         [HttpGet]
 
         public IActionResult Edit(int id)
